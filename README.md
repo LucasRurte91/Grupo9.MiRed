@@ -34,17 +34,18 @@ Gente de la provincia de La Rioja.
 Oferta al público: 
 Llegaremos a nuestro público creando una competencia ya que muy pocos lugares brindan el servicio de reservar turnos y comprar productos mediante una página web.
 
-DETALLE DEL PRODUCTO 
-"RED"
+DETALLE DEL PRODUCTO
+
+“RED” 
 ¿Qué es el producto?
-El producto que nosotros brindamos y ofrecemos a la gente es para que puedan tener un tiempo recreativo jugando al paddle, además de poder mirar a la gente que juega disfrutando de una bebida o comida en nuestro local.
-¿De dónde viene?
-Nuestro producto nace después de hacer un estudio mercado de cuáles son los productos que están marcando tendencia en estos últimos años, y así poder inicializar el proyecto “RED”
-¿Qué hace que sea diferentes a otros productos?
-Nuestra organización ofrece una página web en donde el cliente pueda reservar su turno mediante transferencia o mercado pago y no tener que ir establecimiento además en nuestro sitio web presentamos varios artículos para la venta como son (indumentaria de paddle, paletas para la venta y alquiler y pelotas de paddle).
-¿Cómo se utiliza el producto?
-Nuestro Producto tiene una muy básica manipulación para el cliente, además también pensamos en instrucciones para que la clientela le resulte fácil manipular la página web para poder reservar su turno de paddle y adquirir artículos de nuestro sitio. 
-¿Qué problemas resuelve?
-Los problemas que resuelve el producto son muchísimos desde tener que ir al establecimiento a abonar un turno, los problemas con la disponibilidad de canchas y por último el problema de que se cancele el turno por no pagar la seña.
+ El servicio/producto que nosotros brindamos y ofrecemos al cliente se relaciona directamente con el deporte y la gastronomía, específicamente la actividad conocida como Paddle, donde las personas interesadas podrán acceder a nuestro sitio para reservar su lugar en el establecimiento conocido como RED ubicado en la ciudad de La Rioja, Argentina donde contamos con canchas profesionales del deporte anteriormente mencionado. Además también podrán alquilar/comprar productos como paletas, indumentaria, etc. Por ultimo pero no menos importante contamos con un pequeño bar donde la gente podrá beber/comer a su antojo y nosotros desde nuestra página le brindaremos la posibilidad de reservar su lugar de igual manera que les damos la posibilidad de que accedan al menú virtual para tener una pre-visualización de lo que ofrecemos gastronómicamente.
+¿De dónde viene? 
+La idea nace de una idea de competencia ya que en la Ciudad de La Rioja no hay establecimientos que ofrezcan un servicio mediante una página web para reservar turnos. El objetivo de estos Sprints va ser llevar a cabo la web para estar un paso adelante y así ganar un lugar en el mercado. 
+¿Qué hace que sea diferentes a otros productos? 
+Nuestra organización ofrece una página web en donde el cliente pueda reservar su turno y no tener que ir establecimiento o más bien tener que lidiar con las problemáticas de no poder reservar mediante otros medios de pagos que no sean en efectivo, es por eso que nuestra página va ofrecer la posibilidad de hacer el pago de la “seña” mediante tarjetas, mercado pago, etc. Además en nuestro sitio web presentamos varios artículos para la venta como son (indumentaria de paddle, paletas, pelotas, menú de comida, menú de bebidas, etc). 
+¿Cómo se utiliza el producto? 
+El servicio/producto tiene que ser fácil de manejar para el cliente ya que es un deporte que se practica en todas las edades y cada vez va adquiriendo más popularidad, tiene que ser entendible para las personas que son principiantes o simplemente quieren probar dicha actividad. La estructura será básica y detallada para que sepan paso a paso como llegar al objetivo final.
+¿Qué problemas resuelve? 
+El problema principal que resuelve es la posibilidad de tener la comodidad de guardar un lugar sin tener que moverse de casa y además poder usar otros medios de pago para la reserva, es una problemática muy habitual en nuestra ciudad el tema de las reservas, no todos tienen movilidad las 24hr del día o no todos tienen dinero físico, mucha gente se maneja con dinero virtual (mercado pago) o con tarjetas. Por eso, nosotros brindaremos la solución a estos problemas.
 
 
