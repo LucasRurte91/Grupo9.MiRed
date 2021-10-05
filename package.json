@@ -1,7 +1,7 @@
 {
   "name": "red",
   "version": "1.0.0",
-  "description": "",
+  "description": "Grupo 9. Proyecto Digital House \"Red\"\r Integrantes: \r Alan Ades: Mi nombre completo es Alan Ramón Ades, tengo 21 años, soy una persona ambiciosa, con mucha curiosidad. Siempre deseo aprender más sea lo que sea y desarrollarme en el ámbito en el cual esté. El trabajo en equipo es algo en lo que tengo experiencia y valoro a la gente que pone empeño en las cosas. Me considero sensible y creo que durante estos años desarrollé mucho mi inteligencia emocional, consiguiendo ser empático frente a otros, sabiendo escucharlos y contenerlos.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,13 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "git": "^0.1.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasRurte91/Grupo9.MiRed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasRurte91/Grupo9.MiRed/issues"
+  },
+  "homepage": "https://github.com/LucasRurte91/Grupo9.MiRed#readme"
 }
