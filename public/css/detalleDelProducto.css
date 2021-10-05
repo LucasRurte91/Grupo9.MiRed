@@ -7,7 +7,7 @@ body{
 
 /*inicio del header*/
 header{
-    background-color: black; 
+    background-color: #092327
 }
 .iconos-titulo-header{
     display: flex;

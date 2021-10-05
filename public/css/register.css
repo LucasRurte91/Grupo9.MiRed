@@ -14,11 +14,11 @@ body{
     font-size: 20px;
 }
 /*COMIENZO DEL HEADER*/
-header{
+/*header{
     color: #e71645;
     text-align: center;
     font-size: 20px;
-}
+}*/
 .registros{
     padding: 5px;
     margin-top: 20px;
@@ -82,6 +82,25 @@ header{
 .style{
     color: white;
     background-color: black;
+}
+/*HEADER ALAN*/
+header{
+    background-color: black;
+}
+.iconos-titulo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger-menu{
+    color: #e71645;
+    padding-left: 5%;
+    font-size: 35px;
+}
+.carrito{
+    color: #e71645;
+    font-size: 35px;
+    padding-right: 5%;
 }
 /*FIN DEL HEADER*/
 

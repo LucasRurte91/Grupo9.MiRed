@@ -15,9 +15,11 @@
         </head>
                 <body>
                     <!--COMIENZO DEL REGISTRO-->
-                    <header>
+                    <!--INICIO DEL HEADER-->
+                    <%- include("partials/header") %>
+                     <!--FIN DEL HEADER-->
                         <form method="GET" action="/register">
-                            <div class="banner_img">
+                            <div class="registros">
                                 <img src="images/RED.gif" alt="imagenPaddle">
                             </div>
                         <div class="registros">
@@ -59,7 +61,7 @@
                         </div>
                     </form>
                         <!--FIN DEL REGISTRO-->
-                    </header>
+    
                      <!--COMIENZO DEL FOOTER-->
                      <%- include("partials/footer") %>
                      <!--FIN DEL FOOTER-->
