@@ -86,6 +86,28 @@ body{
     box-shadow: 0px 0px 10px #e71645;
     transition: box-shadow , 0.2s;
 }
+.descripcion-label {
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.descripcion-input {
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    border: solid 1px var(--gray);
+    padding: 0 15px;
+}
+  
+textarea.descripcion-input {
+    min-height: 140px;
+    resize: vertical;
+    padding: 15px;
+}
     .footer {
         padding: 30px 0;
         background-color: #092327;
