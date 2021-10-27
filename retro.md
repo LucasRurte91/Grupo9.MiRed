@@ -1,24 +1,21 @@
-Comenzar a hacer:
-- Resolver las cosas con mayor anticipación
-- Pedir ayuda si es necesario entre nosotros
-- Organizar y distribuir de manera eficiente las tareas.
-- Establecer horarios de reunión.
-- Contabilizar los días restantes que quedan para entregar el sprint y así mismo dividir los días de trabajo.
+Sprint 4:
+A hacer: 
+1-Dividir equitativamente las consignas.
+2-Leer el sprint mas de 2 veces para no olvidar nada.
+3-Tener en cuenta la dificultad de cada consigna.
+4-Estimar un tiempo por cada consigna.
+5-Repasar sprints anteriores para iniciar el 5to.
 
-Hacer más:
-- Tener mas comunicación
-- Reunirnos con más frecuencia.
-- Reforzar vínculos
+A mejorar:
+1-Hacer las consignas con mayor anticipacion.
+2-Juntarnos con mas frecuencia.
+3-De acuerdo a la dificultad, tener en cuenta la posibilidad de hacerlo todos juntos.
+4-Reportar los problemas para recibir ayuda y asi lograr la agilidad de las consignas.
 
 Continuar haciendo:
-- Seguir con la felicidad de poder distribuir las tareas sin conflictos de por medio.
-- Seguir apoyándonos sin problema alguno.
-- Seguir respetando los horarios ajenos.
-- Seguir aportando nuestros diferentes puntos de vista
-- Aportar ideas, planes de cómo realizar un trabajo
+1-Continuar el respeto y compañerismo que venimos teniendo.
+2-Seguir recibiendo y aportar criticas constructivas sobre el realizamiento de las consignas.
+3-Aportar ideas.
+4-Mantener la comunicacion diaria.
 
-Hacer menos:
-- Terminar los trabajos el mismo dia que se entrega
-
-Dejar de hacer:
-- Dejar que no pasen tantos días después que dio el sprint
+https://trello.com/b/H1XdoJwe/sprint-2
