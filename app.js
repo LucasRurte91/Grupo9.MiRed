@@ -13,4 +13,4 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.use(express.static("public"));
 app.use("/", mainRouter);
-app.use("/products", mainProducts);
+app.use("/products", productsRouter);
