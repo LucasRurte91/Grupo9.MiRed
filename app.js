@@ -12,8 +12,5 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'))
 
 app.use(express.static("public"));
-app.use("/", mainRouter)
-app.use("/login", mainRouter)
-app.use("/register", mainRouter)
-app.use("/productCart", mainRouter)
-app.use("/detalleDelProducto", mainRouter)
+app.use("/", mainRouter);
+app.use("/products", mainProducts);
