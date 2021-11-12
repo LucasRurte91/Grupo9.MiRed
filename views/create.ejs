@@ -4,19 +4,21 @@
             <meta charset="UTF-8">
             <meta http-equiv="X - UA - Compatible" contect="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="css/create.css">
             <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
             <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            rel="stylesheet" />
+            rel="stylesheet">
+            <link rel = "stylesheet" href = "css/create.css">
+    </head>
 <body>
-    <div class="banner_img">
-        <img src="images/RED.gif" alt="imagenPaddle">
-    </div>
-    <H2 class="titulo">Formulario de creacion de Productos</H2>
     <header>
         <%- include("partials/header") %>
+    </header>
+    <div class="banner_img">
+        <img src="images/RED.gif" alt="imagenPaddle" width="200">
+    </div>
+    <H2 class="titulo">Formulario de creacion de Productos</H2>
         <main>
             <form action="/products" method="POST" enctype="multipart/form-data" class="formul-form">
 
@@ -67,7 +69,6 @@
     
 
         </main>
-    </header>
       <!--COMIENZO DEL FOOTER-->
       <%- include("partials/footer") %>
       <!--FIN DEL FOOTER-->

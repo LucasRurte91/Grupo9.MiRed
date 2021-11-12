@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/products.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+<body>
+    <!--INICIO DEL HEADER-->
+    <%- include("partials/header") %>
+    <!--FIN DEL HEADER-->
+    <H2 class="titulo">Todos los usuarios</H2>
+    <div class="banner_img">
+        <img src="images/RED.gif" alt="imagenPaddle" width="200">
+    </div>
+    <% for (let i=0 ; i < users.length ; i++) { %>
+        <div class= "contenedor-products">
+            <p class="nombre-user">NOMBRE: <%= users[i].first_name %></p>
+            <p class="apellido-user">APELLIDO: <%= users[i].last_name %></p>
+            <p class="email-user">EMAIL: <%= users[i].email %></p>
+            <p class="contraseña-user">CONTRASEÑA: <%= users[i].password %>%</p>
+            <p class="categoria-user">CATEGORIA: <%= users[i].category %></p>
+            <p class="imagen-user"><%= users[i].image %></p>
+        </div>
+<% } %>
+
+<!--COMIENZO DEL FOOTER-->
+<%- include("partials/footer") %>
+<!--FIN DEL FOOTER-->
