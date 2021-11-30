@@ -22,16 +22,3 @@ Dejar de hacer:
 Nada en especial
 
 https://trello.com/b/H1XdoJwe/sprint-2
-
-1. Comenzar a hacer:
--Terminar los trabajos con tiempo y forma
--Hacer las consignas con mayor anticipacion
-2. Hacer más:
--Hacer las consignas con mayor anticipacion
--Juntarnos como grupo mas seguido
-3. Continuar haciendo:
--Realizar las actividades en forma colaborativa
--Ayudarnos como grupo y respetar los horarios de cada uno
-4. Hacer menos:
-
-5. Dejar de hacer:
