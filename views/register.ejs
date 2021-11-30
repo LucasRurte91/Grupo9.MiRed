@@ -18,7 +18,7 @@
                     <!--INICIO DEL HEADER-->
                     <%- include("partials/header") %>
                      <!--FIN DEL HEADER-->
-                        <form method="GET" action="/register">
+                     <form action="/" method="POST" enctype="multipart/form-data" class="reg-form">
                             <div class="registros">
                                 <img src="images/RED.gif" alt="imagenPaddle">
                             </div>
@@ -38,7 +38,7 @@
                         <div class="registros"> 
                             <i class="numTel">
                             <label for="numTelefono">Numero de Telefono</label>
-                            <input type="tel" name="numTelefono" placeholder="phone number" class="style" required>
+                            <input type="tel" name="numTelefono" placeholder="phone_number" class="style" required>
                             </i>
                         </div>
                         <div class="registros">
@@ -48,11 +48,11 @@
                             </i>
                         </div>
                         <div class="registros">
-                            <i class="confirmarC">
-                            <label for="password">Confirmar Contraseña</label>
-                            <input type="password" name="password" placeholder="confirm password" class="style" required>
-                            </i>
-                        </div>
+                            <i class="avatar">
+                            <label for="avatar">Selecciona una imagen</label>
+                            <input type="file" name="avatar" id="avatar">
+                            </i>    
+                          </div>
                     
                        <div class="registros">
                             <p>Hace click aca <i class="fas fa-hand-point-down"></i> y forma parte de nosotros</p>

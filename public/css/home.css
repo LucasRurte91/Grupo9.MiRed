@@ -7,24 +7,6 @@
 }
 
 /*HEADER ALAN*/
-header{
-    background-color: black; 
-}
-.iconos-titulo-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.burger-menu{
-    color: #e71645;
-    padding-left: 5%;
-    font-size: 35px;
-}
-.carrito{
-    color: #e71645;
-    font-size: 35px;
-    padding-right: 5%;
-}
 
 /* INICIO MENU NUEVO 
 

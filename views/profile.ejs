@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="css/register.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+                <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                rel="stylesheet" />
+               
+      
+        </head>
+<body>
+    <%- include("partials/header") %>
+
+<main class="userAccount">
+
+<%/*<h2 class="register-bienvenidos"><%=users.first_name%> bienvenido a tu perfil!</h2>  */ %> 
+ 
+<div class="img-container">
+  <img src="/images/avatars/<%= users.avatars %>">
+</div> 
+  
+
+<div class="register-formulario">
+    <form action="/users/update" method="POST" enctype="multipart/form-data" class="reg-form">      
+      <div>
+        <label for="firstName">Nombre</label>
+        <input type="text" name="firstName" id="firstName" disabled value="<%=users.first_name%>"/>       
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" disabled value="<%=users.email%>"/>        
+      </div>
+      <div>
+      <div>
+        <label for="user">Usuario</label>
+        <input type="text" name="user" id="user" disabled value="<%=users.users%>">        
+      </div>
+      <div>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" disabled value="Relleno">        
+      </div>     
+      
+      <!-- <button class="userUpdate" type="submit">Actualizar</button> -->
+    </form>   
+
+  </div> 
+
+</main>
+
+
+
+
+<%- include('../partials/footer') %>
+</body>
+
+</html>

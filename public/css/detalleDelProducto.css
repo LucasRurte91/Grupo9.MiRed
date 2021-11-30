@@ -6,25 +6,46 @@ body{
 }
 
 /*inicio del header*/
-header{
-    background-color: #092327
-}
-.iconos-titulo-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.burger-menu{
-    color: #e71645;
-    padding-left: 5%;
-    font-size: 35px;
-}
-.carrito{
-    color: #e71645;
-    font-size: 35px;
-    padding-right: 5%;
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    
 }
 
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: #e71645
+    ;
+}
+
+.logoMenu {
+    font-size: 40px;
+    color: #e71645;
+    text-align: center;
+    visibility: hidden;
+    align-items: center;
+    
+}
+
+.login {
+    float: right;
+}
 /*fin del header*/
 
 
@@ -219,29 +240,30 @@ button:hover{
 /* FIN FOOTER */
 
 /* inicio del header*/
-header{
-    background-color: black; 
-}
-.iconos-titulo-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.burger-menu{
-    color: #e71645;
-    padding-left: 5%;
-    font-size: 35px;
-}
-.carrito{
-    color: #e71645;
-    font-size: 35px;
-    padding-right: 5%;
-}
+
 
 /*fin del header*/
+@media (min-width: 361px) {
 
-@media (min-width: 1269px){
-    body{    
-    background-image: url(public/images/red_1.png);
-}
-}
+    .logoMenu {
+            visibility: visible;
+            position: relative;
+            left: 300px;
+            
+        }
+    
+        .menu{
+            visibility: hidden;
+        }
+    
+    
+    @media (min-width: 760px) {
+    
+    
+        .menu {
+            visibility: visible ;
+        }
+    
+        .logoMenu {
+            visibility: hidden;
+        } }}

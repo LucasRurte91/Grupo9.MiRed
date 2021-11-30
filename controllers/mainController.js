@@ -13,7 +13,11 @@ const controller={
     },
     detalleDelProducto: function(req, res){
         return res.render("detalleDelProducto")
+    },
+    profile: function(req, res){
+        return res.render("profile")
     }
+    
 }
 
 module.exports = controller

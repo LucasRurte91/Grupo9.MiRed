@@ -14,8 +14,13 @@
         <!--FIN DEL HEADER-->
         <main>
             <div class="contenedor-red"><img src="images/RED.gif" width="200"></div>
-            <form class="form" action="/home" method="POST">
+            <form class="form" action="/login" method="POST">
                 <input type="email" name="email" placeholder="Correo electónico">
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger"> 
+                        <% errors.password.msg %>
+                    </div>
+                 <% } %>   
                 <br>
                 <input type="password" name="contraseña" placeholder="Contraseña">
                 <br>

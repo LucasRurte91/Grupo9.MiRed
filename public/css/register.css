@@ -79,28 +79,54 @@ body{
     font-size: 20px;
     font-style: normal;
 }
+.avatar{
+    font-size: 20px;
+    font-style: normal;
+}
 .style{
     color: white;
     background-color: black;
 }
 /*HEADER ALAN*/
-header{
-    background-color: black;
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    
 }
-.iconos-titulo-header{
-    display: flex;
-    justify-content: space-between;
+
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: #e71645
+    ;
+}
+
+.logoMenu {
+    font-size: 40px;
+    color: #e71645;
+    text-align: center;
+    visibility: hidden;
     align-items: center;
+    
 }
-.burger-menu{
-    color: #e71645;
-    padding-left: 5%;
-    font-size: 35px;
-}
-.carrito{
-    color: #e71645;
-    font-size: 35px;
-    padding-right: 5%;
+
+.login {
+    float: right;
 }
 /*FIN DEL HEADER*/
 
@@ -179,6 +205,8 @@ header{
 /*IMAGEN -GIF*/
 .banner_img img{
    width: 25%;
+   position: relative;
+   left: 37%
 }
 .banner_img img:hover{
     box-shadow: 0px 0px 10px #e71645;
@@ -263,6 +291,19 @@ header{
     margin: 15px;
 }
 
+
+.logoMenu {
+    visibility: visible;
+    position: relative;
+    left: 60px;
+    
+}
+
+.menu{
+    visibility: hidden;
+}
+
+
  @media (min-width: 769px){
     .marca{
         font-size: 20px;
@@ -324,6 +365,14 @@ header{
         width: 80%;
         position: relative;
         left: 10%;
+        }
+
+        .menu {
+            visibility: visible ;
+        }
+    
+        .logoMenu {
+            visibility: hidden;
         }
     
     /*FIN DE LA REMERA PADDLE*/

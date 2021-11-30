@@ -18,9 +18,10 @@ const controller = {
 		res.render("create")
 	},
     store: (req, res) => {
-        let productoNuevo = {
-            id: products(products.length - 1).id + 1, 
-            ...req.body
+        let ids = products.map(p=>p.id)
+		let productoNuevo = {
+			id: Math.max(...ids)+1,
+			...req.body,
         }
         products.push(productoNuevo)
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
@@ -31,12 +32,13 @@ const controller = {
         res.render("edit",{ productToEdit })
     },
     update: (req, res)=>{
+        let image
         let id = req.params.id
 		let productToEdit = products.find(product => product.id == id)
         productToEdit = {
 			id: productToEdit.id,
 			...req.body,
-			image: image,
+            image: image
 		}
 		
 		let newProducts = products.map(product => {
