@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Red</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <!--INICIO DEL HEADER-->
+        <%- include('../partials/header') %>
+        <!--FIN DEL HEADER-->
+        <main>
+            <div class="contenedor-red"><img src="../images/RED.gif" width="200"></div>
+             <form action="/users/login" method="POST" enctype="multipart/form-data" class="form">
+                <input type="email" name="email" placeholder="Correo electónico" required>
+               
+                <br>
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <a class="olvidaste" href="#">¿Olvidaste tu contraseña?</a><br>
+            <a>¿No tenés cuenta?</a><b><a href="/users/register">Registrate</a></b>
+        </main>
+        <!--COMIENZO DEL FOOTER-->
+        <%- include('../partials/footer') %>
+        <!--FIN DEL FOOTER-->
+    </body>
+</html>

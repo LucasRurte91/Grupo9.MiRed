@@ -13,11 +13,11 @@ const storage = multer.diskStorage({
         cb(null,filename);
     }
 })
-const upload = multer({storage});
+var upload = multer({storage: storage});
 
 router.get("/", mainController.home);
-router.get("/login", mainController.login);
-router.get("/register", mainController.register);
+router.get("/users/login", mainController.login);
+router.get("/users/register", mainController.register);
 router.get("/productCart", mainController.productCart);
 router.get("/detalleDelProducto", mainController.detalleDelProducto)
 router.get("/profile", mainController.profile)

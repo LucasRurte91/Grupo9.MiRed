@@ -21,12 +21,11 @@
     </div>
     <% for (let i=0 ; i < users.length ; i++) { %>
         <div class= "contenedor-products">
-            <p class="nombre-user">NOMBRE: <%= users[i].first_name %></p>
-            <p class="apellido-user">APELLIDO: <%= users[i].last_name %></p>
-            <p class="email-user">EMAIL: <%= users[i].email %></p>
-            <p class="contraseña-user">CONTRASEÑA: <%= users[i].password %></p>
-            <p class="numTel">CATEGORIA: <%= users[i].phone_number %></p>
-            <p class="imagen-user"><%= users[i].image %></p>
+            <p class="full_name">NOMBRE Y APELLIDO: <%= users[i].full_name %></p>
+            <p class="email">EMAIL: <%= users[i].email %></p>
+            <p class="password">CONTRASEÑA: <%= users[i].password %></p>
+            <p class="phone_number">CATEGORIA: <%= users[i].phone_number %></p>
+            <p class="image"><%= users[i].image %></p>
         </div>
 <% } %>
 

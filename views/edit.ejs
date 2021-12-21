@@ -19,11 +19,11 @@
     </div>
     <H2 class="titulo">Formulario de creacion de Productos</H2>
         <main>
-            <form action="/products/<%= productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
+            <form action="/products/productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
 
         <div class="formulario">
         <label for="name">Nombre Del Producto</label>
-        <input type="text" id="name" class="style" placeholder="Ej: Medias" value="<%= productToEdit.nombre_producto %>">
+        <input type="text" id="nombre_producto" class="style" placeholder="Ej: Medias" value="<%= productToEdit.nombre_producto %>">
         </div>
 
         <div class="formulario">
@@ -58,6 +58,13 @@
         <label for="descripcion" class="descripcion-label">Descipción:</label>
         <textarea name="descripcion" id="descripcion" class="descripcion-input" value="<%= productToEdit.descripcion %>"></textarea> 
         </div>
+
+        <div class="archivo">
+            <i class="avatar">
+            <label for="avatar">Selecciona una imagen</label>
+            <input type="file" name="avatar" id="avatar">
+            </i>    
+          </div>
 
         <div class="guardar-producto">
         <label for="guardar"></label>

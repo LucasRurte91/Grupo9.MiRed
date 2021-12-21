@@ -12,7 +12,7 @@ const controller = {
     },
     detail: (req, res) => {
         let product = products.find(product=>product.id==req.params.id)
-        res.render ("products", { product })
+        res.render ("products", { product,toThousand })
     },
     create: (req, res) => {
 		res.render("create")
@@ -22,7 +22,7 @@ const controller = {
 		let productoNuevo = {
 			id: Math.max(...ids)+1,
 			...req.body,
-        }
+		};
         products.push(productoNuevo)
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
         res.redirect("products")
@@ -32,23 +32,23 @@ const controller = {
         res.render("edit",{ productToEdit })
     },
     update: (req, res)=>{
-        let image
-        let id = req.params.id
+        let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
-        productToEdit = {
-			id: productToEdit.id,
-			...req.body,
-            image: image
-		}
+
+		productToEdit = {
+            id: productToEdit.id,
+			...req.body
+		};
 		
 		let newProducts = products.map(product => {
 			if (product.id == productToEdit.id) {
-				return product = {...productToEdit}
+				return product = {...productToEdit};
 			}
-			return product
+			return product;
 		})
-		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '))
-		res.redirect("products")
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		res.redirect("products");
 	},
     destroy: (req, res)=>{
         let id = req.params.id
