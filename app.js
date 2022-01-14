@@ -34,6 +34,10 @@ app.set('views', path.join(__dirname, 'views'))
 app.use("/users", usersRouter)
 app.use("/", mainRouter);
 app.use("/products", productsRouter);
+<<<<<<< HEAD
 
 
 
+=======
+app.use("/users", usersRouter)
+>>>>>>> 155b04e26ef33fda240c6bc2b769d8bcbe34fa3c
