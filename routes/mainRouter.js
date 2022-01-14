@@ -16,10 +16,10 @@ const storage = multer.diskStorage({
 var upload = multer({storage: storage});
 
 router.get("/", mainController.home);
-router.get("/users/login", mainController.login);
-router.get("/users/register", mainController.register);
+//router.get("/users/login", mainController.login);
+//router.get("/users/register", mainController.register);
 router.get("/productCart", mainController.productCart);
 router.get("/detalleDelProducto", mainController.detalleDelProducto)
-router.get("/profile", mainController.profile)
+//router.get("/users/profile", mainController.profile)
 
 module.exports = router;

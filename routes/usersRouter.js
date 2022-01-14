@@ -5,8 +5,8 @@ const {body} = require('express-validator');
 
 
 
-router.get("/", usersController.users)
-router.get("/:id", usersController.detail)
+//router.get("/", usersController.users)
+//router.get("/:id", usersController.detail)
 //Controller
 const userController = require('../controllers/usersController');
 
@@ -47,10 +47,9 @@ body ('image').custom((value, { req }) => {
 //Formulario registro
 router.get('/register', guestMiddleware, userController.register);
 
-
-
 //Procesar el registro
 router.post('/register', registerValidations, uploadFile.single('image'), userController.processRegister);
+
 
 
 //Fomrulario de login
@@ -60,7 +59,8 @@ router.get('/login', usersController.login);
 router.post('/login', usersController.loginProcess)
 
 //Perfil de Usuario
-router.get('/profile', authMiddleware, usersController.profile);
+//router.get('/profile', authMiddleware, usersController.profile);
+router.get('/profile', usersController.profile);
 
 // Perfil de Usuario
 //router.get('/profile/', authMiddleware, usersController.profile);

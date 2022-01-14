@@ -81,31 +81,33 @@ processRegister: (req, res) => {
   
 },
 
-login: (req,res) => {
-    
+login: (req,res) => { 
     //console.log(req.session);
+    //return res.send("hola")
     return res.render('users/login');
 },
+
 loginProcess: (req, res) => {
 
      //return res.send(req.body); 
      //res.send("hola");
  let errors = validationResult(req);	
- //res.send(errors)
-        //let userName = req.body.usuario;
+ //return res.send("hola" + req.body)
+        let userName = req.body.usuario;
         let userToLogin = User.findByField('email', req.body.email);
-        if(userToLogin) {
+            //return res.send(userToLogin); 
             if (userToLogin) {
                 //res.send(req.body.password + ".." + userToLogin.password );
                 let isOKThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
                 if (isOKThePassword){
+                    //res.send("hola" + req.session.user)
                     req.session.user=userToLogin
-                    return res.redirect('/users/profile')
+                    //res.send(req.session.user) 
+                    return res.redirect('users/profile')
                 }
             }
-        }
     
-        return res.render('users/login', {
+        return res.render('/users/login', {
             errors: {
                 email: {
                     msg: 'Las credenciales son invalidas'
@@ -143,10 +145,12 @@ loginProcess: (req, res) => {
 
 
     profile: (req, res) => {
-        return res.render('profile', {
+        //return res.send("hola" + req.session.user)
+        return res.render('users/profile', {
             users: req.session.user
         });
     },
+
 }
 
 
