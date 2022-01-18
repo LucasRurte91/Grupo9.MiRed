@@ -103,7 +103,7 @@ loginProcess: (req, res) => {
                     //res.send("hola" + req.session.user)
                     req.session.user=userToLogin
                     //res.send(req.session.user) 
-                    return res.redirect('users/profile')
+                    return res.redirect('/users/profile')
                 }
             }
     

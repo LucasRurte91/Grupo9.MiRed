@@ -8,8 +8,27 @@ const controller={
     },
     detalleDelProducto: function(req, res){
         return res.render("detalleDelProducto")
+    },
+    indumentaria: function (req, res) {
+        return res.render("indumentaria")
+    },
+    paletas: function (req, res) {
+        return res.render("paletas")
+
+    },
+    sectorGastronomico: function (req, res) {
+        return res.render("sectorGastronomico")
+    },
+    ofertas: function (req, res) {
+        return res.render("ofertas")
+
+    },
+    otros: function (req, res) {
+        return res.render("otros")
+    },
+    turnos: function (req, res) {
+        return res.render("turnos")
     }
-    
 }
 
 module.exports = controller

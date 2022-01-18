@@ -20,6 +20,15 @@ router.get("/", mainController.home);
 //router.get("/users/register", mainController.register);
 router.get("/productCart", mainController.productCart);
 router.get("/detalleDelProducto", mainController.detalleDelProducto)
+
+//Productos de red
+router.get("/indumentaria", mainController.indumentaria)
+router.get("/paletas", mainController.paletas)
+router.get("/sectorGastronomico", mainController.sectorGastronomico)
+router.get("/ofertas", mainController.ofertas)
+router.get("/otros", mainController.otros)
+router.get("/turnos", mainController.turnos)
+
 //router.get("/users/profile", mainController.profile)
 
 module.exports = router;
