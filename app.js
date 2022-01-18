@@ -36,6 +36,3 @@ app.use("/", mainRouter);
 app.use("/products", productsRouter);
 
 
-
-
-
