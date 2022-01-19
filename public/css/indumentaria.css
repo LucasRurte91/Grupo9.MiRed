@@ -125,7 +125,7 @@ main section article i{
     main section article .marca{
         display: block
     }
-    main section article :hover.fa-truck{
+    main section article :hover.fa-shopping-cart{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         transform: rotate(-90deg);
         transition-duration: 3s;
