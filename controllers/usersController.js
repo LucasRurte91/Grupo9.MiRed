@@ -127,5 +127,4 @@ loginProcess: (req, res) => {
 
 }
 
-
 module.exports = controller
