@@ -51,6 +51,5 @@ const User = {
         fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '));
         return true;
     }}
-
     
 module.exports = User; 
