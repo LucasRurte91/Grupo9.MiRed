@@ -129,7 +129,8 @@ body{
 h1{
     color: #e71645;
 }
-.form {
+/* CAMBIOS EN EL FORM AHORA SE LLAMA .LOGIN-FORM*/
+.login-form {
     padding-top: 8px;
     width: 300px;
     margin: 0 auto;
@@ -138,7 +139,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.form input {
+.login-form input {
     width: 90%;
     text-align: center;
     height: 30px;
@@ -146,7 +147,7 @@ h1{
     border: 2px solid #170420;
     border-radius: 24px;
 }
-.form button {
+.login-form button {
     margin: 10px;
     font-size: 30px;
     background-color:#170420;
@@ -155,7 +156,7 @@ h1{
     transition-property: border;
     transition-duration: 0.4s;
 }
-.form button:hover{
+.login-form button:hover{
     border: 3px solid white
 }
 a{

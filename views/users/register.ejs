@@ -23,36 +23,59 @@
                             <div class="banner_img">
                                 <img src="../images/RED.gif" alt="imagenPaddle">
                             </div>
+                            <h1 class="style">estoy probando algo</h1>
                         <div class="registros">
                             <i class="nombreApellido">
                             <label for="full_name" >Nombre y Apellido</label>
-                            <input type="text" placeholder="Inserte nombre y apellido" name="full_name" class="style" required>
-                            </i>
+                           <input class="full_name" type="text" name="full_name" value="<%= locals.oldData ? oldData.full_name : null %>"/>									
+								<% if (locals.errors && errors.full_name) { %>
+									<div class="text-danger">
+										<%= errors.full_name.msg %> 
+									</div>
+								<% } %>
                         </div>
 
                         <div class="registros">
                             <i class="correo">
                             <label for="email">Correo Electronico</label>
-                            <input type="text" name="email" class="style" required>
-                            </i>
+                            <input class="email" type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>"/>	
+								<% if (locals.errors && errors.email) { %>
+									<div class="text-danger">
+										<%= errors.email.msg %> 
+									</div>
+								<% } %>
                         </div>
                         <div class="registros"> 
                             <i class="numTel">
                             <label for="phone_number">Numero de Telefono</label>
-                            <input type="tel" name="phone_number"  class="style" required>
-                            </i>
+                            <input class="phone_number"type="tel" name="phone_number" value="<%= locals.oldData ? oldData.phone_number : null %>"/>
+								<% if (locals.errors && errors.phone_number) { %>
+									<div class="text-danger">
+										<%= errors.phone_number.msg %> 
+									</div>
+								<% } %>
                         </div>
                         <div class="registros">
                             <i class="password">
                             <label for="password">Contraseña</label>
-                            <input type="password" name="password"  class="style" required>
+                            <input class="password" type="password" name="password" value="<%= locals.oldData ? oldData.password : null %>" />
+								<% if (locals.errors && errors.password) { %>
+									<div class="text-danger">
+										<%= errors.password.msg %> 
+									</div>
+								<% } %>
                             </i>
                         </div>
                         <div class="registros">
                             <i class="avatar">
                             <label for="image">Selecciona una imagen</label>
-                            <input type="file" name="image" id="avatar" required>
-                            </i>    
+                            <input type="file" name="image" id="avatar" value="<%= locals.oldData ? oldData.image : null %>" />
+                                 <% if (locals.errors && errors.image) { %>
+                                    <div class="text-danger">
+                                <%= errors.image.msg %> 
+                            </div>
+                        <% } %>
+                    </i>
                           </div>
                     
                        <div class="registros">
@@ -60,11 +83,15 @@
                         <label for="enviar"></label>
                         <button type="submit" value="enviar" class="boton-enviar">REGISTRAR</button>
                         </div>
+
+                        <ul class="errors"></ul>  
                     </form>
+
                         <!--FIN DEL REGISTRO-->
     
                      <!--COMIENZO DEL FOOTER-->
                      <%- include("../partials/footer") %>
                      <!--FIN DEL FOOTER-->
+                     <script src= "/js/register.js"></script>
                 </body>
     </html>

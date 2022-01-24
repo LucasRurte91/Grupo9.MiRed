@@ -198,6 +198,9 @@ body{
     font-size: 13px;
     color: #aaa;
 }
+.text-danger{
+    color: red;
+}
 
 
 /* FIN FOOTER */
