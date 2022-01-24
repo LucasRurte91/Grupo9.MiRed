@@ -30,6 +30,3 @@ module.exports = (sequelize, dataTypes) => {
     return Categorias;
     
 };
-
-
-
