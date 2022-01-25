@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/users/profile.css">
+
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/editarPerfil.css">
+
+</head>
+<title>Perfil</title>
+
+<!--INICIO DEL HEADER-->
+<%- include("../partials/header") %>
+    <!--FIN DEL HEADER-->
+
+    <body>
+
+        <main>
+            <h3 class="bienvenido">¡Modifiquemos tu perfil!</h3>
+
+
+            <form action="/users/edit/<%= userToEdit.id %>?_method=PATCH" method="POST">
+
+                <div class="registros">
+                    <label for="full_name">Nombre: </label>
+                    <input value="<%= userToEdit.nombre %>" name="full_name" class="style">
+                </div>
+
+                <div class="registros">
+                    <label for="mail">Email: </label>
+                    <input value="<%= userToEdit.email %>" name="email" class="style">
+                </div>
+
+                <div class="registros">
+                    <label for="phone_number">Numero de telefono: </label>
+                    <input value="<%= userToEdit.telefono %>" name="phone_number" class="style">
+                </div>
+
+
+                <div class="registros">
+                    <label for="image">Editar Foto de Perfil</label><br>
+                    <input type="file" name="image" value=" userToEdit.image" class="style"><br>
+                </div>
+
+                <input class="boton-enviar" type="submit" value="Editar usuario">
+            </form>
+
+
+
+
+        </main>
+
+
+    </body>
+    <!--COMIENZO DEL FOOTER-->
+    <%- include("../partials/footer") %>
+        <!--FIN DEL FOOTER-->
+
+</html>

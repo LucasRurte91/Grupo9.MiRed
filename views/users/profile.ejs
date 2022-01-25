@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/users/profile.css">
+            <title>Profile</title>
+            <link rel="stylesheet" href="/css/profile.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+    </head>
+        
+<!--INICIO DEL HEADER-->
+<%- include("../partials/header") %>
+<!--FIN DEL HEADER-->
+
+
+<body>
+	<h2 class="bienvenido">¡Bienvenido a RED!
+		 <%= users.nombre %></h2> 
+    <div class="banner_img">
+        <img src="/images/RED.gif"> 
+    </div>
+    
+    <section class="box">
+    <div class="container" style="margin-top: 40px;">
+        <div class="row">
+            <div class="nombre-user">    
+                <img class="imagen" src="/images/avatars/<%= users.image %> ">
+
+				<div class="h2h">Usuario</div>
+                <div class="h2"><%= users.nombre %></div>
+
+				<div class="h2h">Email</div>
+                <div class="h2"> <%= users.email %> </div>
+
+				<div class="h2h">Teléfono</div>
+				<div class="h2"><%= users.telefono %> </div>
+            </div>
+			<div>
+				<a href="/users/edit/<%= users.id %>" class="editar"> ¿Deseas editar tu usuario? Haz click aquí</a>
+			</div>
+
+        </div>
+		
+    </div>
+</section>
+</body>
+
+<!--COMIENZO DEL FOOTER-->
+<%- include("../partials/footer") %>
+<!--FIN DEL FOOTER-->
+</html>

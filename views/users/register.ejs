@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="css/users/register.css">
+                <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+                <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                rel="stylesheet" />
+                <link rel="stylesheet" href="/css/register.css">
+               
+                <title>"Register"</title>
+        </head>
+                <body>
+                    <!--COMIENZO DEL REGISTRO-->
+                    <!--INICIO DEL HEADER-->
+                    <%- include("../partials/header") %>
+                     <!--FIN DEL HEADER-->
+                     <form action="/users/register" method="POST" enctype="multipart/form-data" class="reg-form">
+                            <div class="registros">
+                                <img src="../images/RED.gif" alt="imagenPaddle">
+                            </div>
+                        <div class="registros">
+                            <i class="nombreApellido">
+                            <label for="full_name" >Nombre y Apellido</label>
+                            <input type="text"  name="full_name" class="style" required>
+                            </i>
+                        </div>
+
+                        <div class="registros">
+                            <i class="correo">
+                            <label for="email">Correo Electronico</label>
+                            <input type="text" name="email" class="style" required>
+                            </i>
+                        </div>
+                        <div class="registros"> 
+                            <i class="numTel">
+                            <label for="phone_number">Numero de Telefono</label>
+                            <input type="tel" name="phone_number"  class="style" required>
+                            </i>
+                        </div>
+                        <div class="registros">
+                            <i class="password">
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password"  class="style" required>
+                            </i>
+                        </div>
+                        <div class="registros">
+                            <i class="image">
+                            <label for="image">Selecciona una imagen</label>
+                            <input type="file" name="image" id="image" class="style" required>
+                            </i>    
+                          </div>
+                    
+                       <div class="registros">
+                            <p>Hace click aca <i class="fas fa-hand-point-down"></i> y forma parte de nosotros</p>
+                        <label for="enviar"></label>
+                        <button type="submit" value="enviar" class="boton-enviar">REGISTRAR</button>
+                        </div>
+                    </form>
+                        <!--FIN DEL REGISTRO-->
+    
+                     <!--COMIENZO DEL FOOTER-->
+                     <%- include("../partials/footer") %>
+                     <!--FIN DEL FOOTER-->
+                </body>
+    </html>

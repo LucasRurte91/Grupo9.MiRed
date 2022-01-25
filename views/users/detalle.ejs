@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/products.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+<body>
+    <!--INICIO DEL HEADER-->
+    <%- include("../partials/header") %>
+    <!--FIN DEL HEADER-->
+    <H2 class="titulo">Todos los usuarios</H2>
+    <div class="banner_img">
+        <img src="images/RED.gif" alt="imagenPaddle" width="200">
+    </div>
+        <div class= "contenedor-products">
+            <p class="full_name">NOMBRE Y APELLIDO: <%= users.nombre %></p>
+            <p class="email">EMAIL: <%= users.email %></p>
+            <p class="password">CONTRASEÑA: <%= users.password %></p>
+            <p class="phone_number">TELEFONO: <%= users.telefono %></p>
+            <p class="image"><%= users.image %></p>
+        </div>
+<% } %>
+
+<!--COMIENZO DEL FOOTER-->
+<%- include("../partials/footer") %>
+<!--FIN DEL FOOTER-->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X - UA - Compatible" contect="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/create.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet" />
+<body>
+    <header>
+        <%- include("partials/header") %>
+    </header>
+    <div class="banner_img">
+        <img src="images/RED.gif" alt="imagenPaddle" width="200">
+    </div>
+    <H2 class="titulo">Formulario de creacion de Productos</H2>
+        <main>
+            <form action="/products/productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
+
+        <div class="formulario">
+        <label for="name">Nombre Del Producto</label>
+        <input type="text" id="nombre_producto" class="style" placeholder="Ej: Medias" value="<%= productToEdit.nombre_producto %>">
+        </div>
+
+        <div class="formulario">
+        <label for="precio">Precio Del Producto</label>
+        <input type="number" id="precio" class="style" placeholder="Ej: $$$" value="<%= productToEdit.precio %>">
+        </div>
+
+        <div class="formulario">
+        <label for="color">Nuevo Color Del Producto</label>
+        <input type="text" id="color" class="style" placeholder="Ej: Black/Orange" value="<%= productToEdit.color %>">
+        </div>
+
+        <div class="formulario">
+        <label for="talle">Nuevo Talle Del Producto</label>
+        <input type="text" id="talle" class="style" placeholder="Ej: 40 (UK 8)" value="<%= productToEdit.talle %>">
+        </div>
+        
+        <div>Aplicar descuento del: </div>
+        <div class="formulario">
+            5%: <input type="radio" name="des" value="5" />. .
+            10%: <input type="radio" name="des" value="10" />. .
+            20%: <input type="radio" name="des" value="20" />. .
+            30%: <input type="radio" name="des" value="30" />
+        </div>
+
+        <div class="formulario">
+        <label for="categoria">Categorias</label>
+        <input type="text" id="categoria" class="style" placeholder="Ej: Sale sale!" value="<%= productToEdit.categoria %>">
+        </div>
+
+        <div class="descripcion">
+        <label for="descripcion" class="descripcion-label">Descipción:</label>
+        <textarea name="descripcion" id="descripcion" class="descripcion-input" value="<%= productToEdit.descripcion %>"></textarea> 
+        </div>
+
+        <div class="archivo">
+            <i class="avatar">
+            <label for="avatar">Selecciona una imagen</label>
+            <input type="file" name="avatar" id="avatar">
+            </i>    
+          </div>
+
+        <div class="guardar-producto">
+        <label for="guardar"></label>
+        <button type="submit" value="guardar" class="guardar">¡Guardar producto a la pagina web!</button>
+        </div>
+
+    </form>
+    
+
+        </main>
+      <!--COMIENZO DEL FOOTER-->
+      <%- include("partials/footer") %>
+      <!--FIN DEL FOOTER-->
+</body>
+</html>

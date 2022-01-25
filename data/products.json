@@ -1,0 +1,89 @@
+[
+ {
+  "id": 1,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "proin risus praesent lectus vestibulum quam sapien varius ut blandit",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Non-binary",
+  "color": "Fuscia",
+  "precio": 16373
+ },
+ {
+  "id": 2,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "nisi venenatis tristique fusce congue diam id ornare imperdiet sapien",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Genderqueer",
+  "color": "Violet",
+  "precio": 12688
+ },
+ {
+  "id": 3,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "in felis donec semper sapien a libero nam dui proin leo",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Polygender",
+  "color": "Purple",
+  "precio": 6778
+ },
+ {
+  "id": 4,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Female",
+  "color": "Orange",
+  "precio": 27210
+ },
+ {
+  "id": 5,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "sapien arcu sed augue aliquam erat",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Male",
+  "color": "Pink",
+  "precio": 15330
+ },
+ {
+  "id": 6,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Bigender",
+  "color": "Red",
+  "precio": 8677
+ },
+ {
+  "id": 7,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Bigender",
+  "color": "Orange",
+  "precio": 23673
+ },
+ {
+  "id": 8
+ },
+ {
+  "id": 9,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "sapien varius ut blandit non interdum in ante vestibulum ante ipsum",
+  "imagen": "./public/images/wilson-paleta-de-frente.png",
+  "categoria": "Genderfluid",
+  "color": "Khaki",
+  "precio": 20738
+ },
+ {
+  "id": 10,
+  "nombre_producto": "Raqueta De Pádel Wilson Blade Team",
+  "descripcion": "eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat",
+  "imagen": "wilson-paleta-de-frente.png",
+  "categoria": "Genderqueer",
+  "color": "Puce",
+  "precio": 24640
+ },
+ {
+  "id": 11
+ }
+]
