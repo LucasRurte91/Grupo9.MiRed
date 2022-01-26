@@ -28,7 +28,11 @@ const controller={
     },
     turnos: function (req, res) {
         return res.render("turnos")
+    },
+    productos: function (req, res) {
+        return res.render("productos")
     }
 }
+
 
 module.exports = controller

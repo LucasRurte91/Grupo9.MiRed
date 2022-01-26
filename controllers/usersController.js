@@ -24,16 +24,18 @@ const controller = {
 },
 processRegister: (req, res) => {
      //return res.send(req.body); 
-   /* const resultValidation = validationResult(req);
-    //return res.send(resultValidation); 
-
-    if (resultValidation.errors.length > 0) {
-        return res.render('/users/register', {
+     const resultValidation = validationResult(req);
+   //return res.send(resultValidation)
+   //console.log(resultValidation);
+    /*if (resultValidation.errors.length > 0) {
+        return res.render('users/register', {
             errors: resultValidation.mapped(),
             oldData: req.body
         });
+    
+    }*/
 
-    } */
+
 
     let userInDB = User.findByField('email', req.body.email);
 
@@ -46,13 +48,12 @@ processRegister: (req, res) => {
         })
 
     } 
- 
+
     let userToCreate = {
         ...req.body,
         password: bcryptjs.hashSync(req.body.password, 10),
         image: req.file.filename
     }
-    
     let userCreated = User.create(userToCreate);
 
     return res.redirect('/users/login') 
@@ -78,7 +79,7 @@ processRegister: (req, res) => {
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
     res.redirect('/users/login');
 
-  
+ 
 },
 
 login: (req,res) => { 
@@ -91,7 +92,8 @@ loginProcess: (req, res) => {
 
      //return res.send(req.body); 
      //res.send("hola");
- let errors = validationResult(req);	
+ let resultValidation = validationResult(req);	
+ //return res.send(resultValidation)
  //return res.send("hola" + req.body)
         let userName = req.body.usuario;
         let userToLogin = User.findByField('email', req.body.email);
@@ -106,7 +108,6 @@ loginProcess: (req, res) => {
                     return res.redirect('/users/profile')
                 }
             }
-    
         return res.render('/users/login', {
             errors: {
                 email: {
@@ -115,34 +116,7 @@ loginProcess: (req, res) => {
             }
         })
     },
-        //return res.send(req.body); 
-        //if (errors.isEmpty()) {
-            
-            //if (userLogin != undefined && bcryptjs.compareSync(req.body.password,userLogin.password) === true ) {
-            /*req.session.userLogged = userLogin;           
-            if (req.body.rememberPassword == "on"){
-                res.clearCookie('recordarUsuario');
-                res.cookie('recordarUsuario', userLogin.id, {maxAge: (1000 * 60) * 2 }); 
-                console.log("recordando cookie");
-            }
-            
-            res.redirect('/profile')
-            }
-            else if (userLogin != undefined && bcryptjs.compareSync(req.body.password,userLogin.password) === false ) {
-                console.log('Contraseña incorrecta');
-            }
-            else {
-                console.log('usuario no encontrado');
-            }
-        }
-        else {
-        res.render('/users/login',{
-            errors:errors.mapped(),
-            old: req.body
-        });
-        };
-    },*/
-
+    //return res.send(req.body);
 
     profile: (req, res) => {
         //return res.send("hola" + req.session.user)
@@ -152,6 +126,5 @@ loginProcess: (req, res) => {
     },
 
 }
-
 
 module.exports = controller

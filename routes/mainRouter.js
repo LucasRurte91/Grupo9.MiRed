@@ -28,6 +28,7 @@ router.get("/sectorGastronomico", mainController.sectorGastronomico)
 router.get("/ofertas", mainController.ofertas)
 router.get("/otros", mainController.otros)
 router.get("/turnos", mainController.turnos)
+router.get("/productos", mainController.productos)
 
 //router.get("/users/profile", mainController.profile)
 

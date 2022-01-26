@@ -4,7 +4,39 @@
   "full_name": "Lucas Ruarte",
   "email": "lucasruarte688@gmail.com",
   "phone_number": "03804200978",
-  "password": "$2b$10$yajwuLqHkBeB0xNOfQzH1eDR0voDKcTopho0gNUAOvV6cRNcbeJwO",
-  "image": "1642516387057_img.png"
+  "password": "$2b$10$8TeAf/eNTRz8eVk9ZUVvzecrCiHjNyoLUPcM.jVJe/X.zsVeAAxrW",
+  "image": "1643036965992_img.jpg"
+ },
+ {
+  "id": 2,
+  "full_name": "MADEIRA DELIA BEATR",
+  "email": "desideriotello@hotmail.com",
+  "phone_number": "03804200978",
+  "password": "$2b$10$DeM8I0nXcMFcDq1DK265GujZ3qMlaNnAoIZ7LVfbcWqLs77doV2f2",
+  "image": "1643036999057_img.jpg"
+ },
+ {
+  "id": 3,
+  "full_name": "Pato Silva",
+  "email": "patosilvabmx@gmail.com",
+  "phone_number": "03804200978",
+  "password": "$2b$10$txU/WVgj4dWLg5K55l55quRV68yJzDhj50cghgRjpgD0uTlXAwiLu",
+  "image": "1643037044530_img.png"
+ },
+ {
+  "id": 4,
+  "full_name": "coco ruarte",
+  "email": "cocola_2000@hotmail.com",
+  "phone_number": "03804200978",
+  "password": "$2b$10$w96W36NQS.RYzcY3HCBSI.9t2l1rDIFAk4AC1anQBpLaq3NG68ipK",
+  "image": "1643037092008_img.jpg"
+ },
+ {
+  "id": 5,
+  "full_name": "Lucas Ruarte Madeira",
+  "email": "lucasruarte688@gmail123456.com",
+  "phone_number": "03804200978",
+  "password": "$2b$10$RSULG5gUlhOFIwNputMxUu0g5r4UkSea7ua7x/8qFn78KQiPkLD.K",
+  "image": "1643040373850_img.jpg"
  }
 ]

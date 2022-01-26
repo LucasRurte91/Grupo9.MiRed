@@ -1,56 +1,58 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    background-color: #17011f
 }
 body{
-    font-family:"Roboto", sans-serif;
-    background-color: #17011f;  
-    flex-wrap:wrap;
-    color: bisque;
-    font-size: 32px;
-}
-.bienvenido{
-    padding: 5px;
-}
-.nombre-user{
-    text-align: center;
-}
-.imagen{
-    width: 20%;
-    position: relative;
-    left: 40%;
-    border-style:  solid ;
-
-}
-.alert-success{
-    text-align: center;
+    background-color: #17011f;
+    color: white;
 }
 .banner_img img{
-    width: 28%;
+    width: 32%;
     position: relative;
-    left: 36%
+    left: 34%
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menu{
+ .banner_img img:hover{
+     box-shadow: 0px 0px 10px #e71645;
+ }
+ .indumentaria{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+ }
+ .paletas{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+ }
+ .ofertas{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+ }
+ .carta-qr{
+    width: 25%;
+    position: relative;
+    left: 39%;
+   
+ }
+ .carta-qr :hover{
+    box-shadow: 0px 0px 10px #e71645;
+ }
+ .menu{
     list-style: none;
     padding: 0;
     background: #092327;
@@ -84,7 +86,6 @@ body{
     align-items: center;
     
 }
-
 .footer {
     padding: 30px 0;
     background-color: #092327;
@@ -156,4 +157,3 @@ body{
 
 
 /* FIN FOOTER */
-

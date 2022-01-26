@@ -24,3 +24,7 @@ module.exports = {
     "dialect": "mysql"
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7cc294a43bdc5e5094e2abbbacb7ee2a2f3d6309

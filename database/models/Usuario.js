@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7cc294a43bdc5e5094e2abbbacb7ee2a2f3d6309
 module.exports = (sequelize, dataTypes) => {
     let alias = "Usuarios";
     let cols = {
@@ -43,10 +47,17 @@ module.exports = (sequelize, dataTypes) => {
     const Usuario = sequelize.define(alias, cols, config);
 
     Usuario.associate = function (models) {
+<<<<<<< HEAD
         Usuario.belongsTo(models.Producto, {
             as: 'productos',
             foreingKey: 'producto_id'
         })
+=======
+        /*Usuario.hasMany(models.Producto, {
+            as: 'productos',
+            foreingKey: 'producto_id'
+        })*/
+>>>>>>> 7cc294a43bdc5e5094e2abbbacb7ee2a2f3d6309
 
 
     };

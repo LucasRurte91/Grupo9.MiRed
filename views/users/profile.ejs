@@ -5,32 +5,94 @@
 			<meta http-equiv="X - UA - Compatible" contect="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="css/users/profile.css">
-
+<title>Profile</title>
 			<link rel="stylesheet" href="/css/profile.css">
 			<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
 			<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 			rel="stylesheet" />
-		   
-	</head>
 		
+	</head>
+		<header>
+			
+            <header>
+                <nav>
+                    
+                    <div class="menu">
+                        <ul>
+                            <li><a href="/">Inicio</a></li>
+                            <li><a href="/turnos">Turnos</a></li>
+                            <li><a href="/sectorGastronomico">Sector Gastronomico</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="/productCart">Carrito</a></li>
+                            <li><a href="/detalleDelProducto">Detalle</a></li>
+                            <li class="productosMobile"><a href="/productos">Productos</a></li>
+                            <li class="login"><a href="/users/login">Iniciar Sesion</a></li>
+                            <li class="login"><a href="/users/profile"><%= users.full_name %></a></li>
+							
+                        </ul>
+                    </div>
+                </nav>
+    
+                <div class="logoMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+			
+
+
+
+
 <body>
-	<!-- Container -->
+	<div class="banner_img">
+		<img src="/images/RED.gif"> 
+	</div>
 	
 	<div class="container" style="margin-top: 40px;">
 		<div class="row">
 			<div class="nombre-user">
-				<h2>Bienvenido nuevo <%= users.full_name %> </h2> </div>
-				<img src="/images/avatars/<%= users.image %> ">
+				
+				<h2 class="bienvenido">Bienvenido a RED <%= users.full_name %></h2> </div>
+				<img class="imagen" src="/images/avatars/<%= users.image %> ">
 				
 				<div class="alert alert-success"><%= users.email %> </div>
 			</div>
 		</div>
 	</div>
 	<!-- //Container -->
-	
-	
-	
 </body>
+
+
+
+
+<footer>
+	<footer>
+		<section class ="footer">
+		 <div class="social">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-facebook"></i></a>
+		</div>
+	
+		<ul class="list">
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="#">Servicios</a>
+			</li>
+			<li>
+				<a href="#">Acerca de</a>
+			</li>
+			<li>
+				<a href="#">Terminos y servicios</a>
+			</li>
+		</ul>
+		<p class="copy">
+			RED - PADEL CLUB @ 2021
+		</p>
+	
+		</section>
+	   </footer>
+</footer>
 </html>

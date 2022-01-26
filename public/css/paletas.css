@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:"Roboto", sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #17011f;  
     flex-wrap:wrap;
     color: white;
@@ -13,13 +13,10 @@ article{
     background-color: #17011f;
 }
 article:hover{
-    box-shadow: gray;
+    box-shadow: #e71645;
 }
 p{
     font: 35px;
-}
-h3{
-    font-size: 24px;
 }
 section{
     text-align: center;
@@ -50,8 +47,8 @@ display: inline-block;
 .tamaño{
     text-align: center;
     color:#e71645;
-    font-size: 30px;
     padding: 15px;
+    font-size: 45px;
 }
 
 .banner_img img{
@@ -86,7 +83,7 @@ main section article i{
     background-color: pink;
     color: #39b54a;
     position: relative;
-    background-color: white;
+    background-color: #EF629F;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -98,7 +95,7 @@ main section article i{
     background-color: pink;
     color: #39b54a;
     position: relative;
-    background-color: white;
+    background-color: #EF629F;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -107,14 +104,14 @@ main section article i{
 }
 .caja-articulo{
     margin: 5px;
-    background-color: white;
+    background-color: #EECDA3;
     width: 100%;
     padding: 10px 10px 10px 10px;
     position: relative;
 }
 .caja-articulo2{
     margin: 5px;
-    background-color: white;
+    background-color: #EECDA3;
     width: 100%;
     padding: 10px 10px 10px 10px;
     
@@ -157,7 +154,7 @@ div.top_header{
 .marca{
     display: block;
 }.marca:hover{
-    background-color: #8baa00;
+    background-color: #e71645;
 }
 
 }
