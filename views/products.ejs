@@ -18,14 +18,11 @@
     <div class="banner_img">
         <img src="images/RED.gif" alt="imagenPaddle" width="200">
     </div>
-    <% for (let i=0 ; i < products.length ; i++) { %>
+    <% for (let i=0 ; i < productos.length ; i++) { %>
             <div class= "contenedor-products">
-                <p class="nombre-paleta">NOMBRE: <%= products[i].nombre_producto %></p>
-                <p class="precio-paleta">PRECIO: $<%= products[i].precio %></p>
-                <p class="foto-products"><%= products[i].imagen %></p>
-                <p class="descripcion-paleta">DESCRIPCION: <%= products[i].descripcion %>%</p>
-                <p class="categoria-paleta">CATEGORIA: <%= products[i].categoria %></p>
-                <p class="color-paleta">COLOR: <%= products[i].color %></p>
+                <a href="/products/<%=productos[i].id%>">
+                    <p class="nombre-paleta">NOMBRE: <%= productos[i].titulo %></p>
+                </a>
             </div>
     <% } %>
 

@@ -19,26 +19,31 @@
     </div>
     <H2 class="titulo">Formulario de creacion de Productos</H2>
         <main>
-            <form action="/products/productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
+            <form action="/products/<%=producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
 
         <div class="formulario">
         <label for="name">Nombre Del Producto</label>
-        <input type="text" id="nombre_producto" class="style" placeholder="Ej: Medias" value="<%= productToEdit.nombre_producto %>">
+        <input name="titulo" type="text" id="titulo" class="style" placeholder="Ej: Medias" value="<%= producto.titulo %>">
         </div>
 
         <div class="formulario">
         <label for="precio">Precio Del Producto</label>
-        <input type="number" id="precio" class="style" placeholder="Ej: $$$" value="<%= productToEdit.precio %>">
+        <input name="precio" type="number" id="precio" class="style" placeholder="Ej: $$$" value="<%= producto.precio %>">
         </div>
 
         <div class="formulario">
-        <label for="color">Nuevo Color Del Producto</label>
-        <input type="text" id="color" class="style" placeholder="Ej: Black/Orange" value="<%= productToEdit.color %>">
+        <label for="color">Color Del Producto</label>
+        <input name="color" type="text" id="color" class="style" placeholder="Ej: Black/Orange" value="<%= producto.colores %>">
         </div>
 
         <div class="formulario">
-        <label for="talle">Nuevo Talle Del Producto</label>
-        <input type="text" id="talle" class="style" placeholder="Ej: 40 (UK 8)" value="<%= productToEdit.talle %>">
+        <label for="talle">Talle Del Producto</label>
+        <input name="talle" type="text" id="talle" class="style" placeholder="Ej: 40 (UK 8)" value="<%= producto.talles %>">
+        </div>
+
+        <div class="formulario">
+            <label for="marca">Marca Del Producto</label>
+            <input name="marca" type="text" id="marca" class="style" placeholder="Wilson" value="<%= producto.marcas %>">
         </div>
         
         <div>Aplicar descuento del: </div>
@@ -50,14 +55,15 @@
         </div>
 
         <div class="formulario">
-        <label for="categoria">Categorias</label>
-        <input type="text" id="categoria" class="style" placeholder="Ej: Sale sale!" value="<%= productToEdit.categoria %>">
-        </div>
-
-        <div class="descripcion">
-        <label for="descripcion" class="descripcion-label">Descipción:</label>
-        <textarea name="descripcion" id="descripcion" class="descripcion-input" value="<%= productToEdit.descripcion %>"></textarea> 
-        </div>
+            <label for="categoria">Categoria del Producto</label>
+            <select name="categoria">
+              <% for(let i=0; i < categorias.length; i++) { %>
+                <option value = "<%=categorias[i].id%>">
+                   <%= categorias[i].nombre %>
+                </option>
+            <% } %>
+          </select>
+          </div>
 
         <div class="archivo">
             <i class="avatar">

@@ -11,13 +11,12 @@ const usersRouter = require("./routes/usersRouter")
 //const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 //app.use(userLoggedMiddleware);
 //cookie
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
 const cookies = require('cookie-parser');
 app.use(cookies());
-app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'))
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 app.listen(3030, ()=>{ 
     console.log("El servidor RED corriendo en: http://localhost:3030/");
 });
@@ -32,7 +31,7 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'))
 
 app.use("/users", usersRouter)
-app.use("/", mainRouter);
 app.use("/products", productsRouter);
+app.use("/", mainRouter);
 
 
