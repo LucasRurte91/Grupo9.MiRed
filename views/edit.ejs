@@ -4,7 +4,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X - UA - Compatible" contect="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="css/create.css">
+            <link rel="stylesheet" href="/css/create.css">
             <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
             <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
@@ -14,12 +14,9 @@
     <header>
         <%- include("partials/header") %>
     </header>
-    <div class="banner_img">
-        <img src="images/RED.gif" alt="imagenPaddle" width="200">
-    </div>
     <H2 class="titulo">Formulario de edicion de Productos</H2>
         <main>
-            <form action="/products/edit/<%=producto.id%>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
+            <form action="/products/edit/<%=producto.id%>?_method=PUT" method="POST" class="formul-form">
 
         <div class="formulario">
         <label for="name">Nombre Del Producto</label>

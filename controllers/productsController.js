@@ -32,7 +32,6 @@ const controller = {
         })
 	},
     store: (req, res) => {
-        console.log(req.body)
         db.Producto.create({
             titulo: req.body.titulo,
             precio: req.body.precio,
@@ -43,7 +42,7 @@ const controller = {
             descripcion: req.body.descripcion,
             //image: req.file.filename
         })
-        .then(res.redirect("products"))
+        .then(res.redirect("/products"))
         /*let ids = products.map(p=>p.id)
 		let productoNuevo = {
 			id: Math.max(...ids)+1,
@@ -64,7 +63,6 @@ const controller = {
         res.render("edit",{ productToEdit })*/
     },
     update: (req, res)=>{
-        console.log(req.body)
         db.Producto.update({
             titulo: req.body.titulo,
             precio: req.body.precio,
@@ -104,7 +102,7 @@ const controller = {
                 id: req.params.id
             }
         })
-        res.redirect("products")
+        res.redirect("/products")
         /*let id = req.params.id
 		let finalProducts = products.filter(product => product.id != id)
 		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "))*/

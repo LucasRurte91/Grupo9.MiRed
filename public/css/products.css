@@ -6,7 +6,46 @@
 body{
     background-color: #170420;
 }
-/*HEADER ALAN*/
+/*INICIIOL HEADER*/
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: #e71645
+    ;
+}
+
+.logoMenu {
+    font-size: 40px;
+    color: #e71645;
+    text-align: center;
+    visibility: hidden;
+    align-items: center;
+    
+}
+
+/*fin del header*/
+
+/*HEADER ALAN
 header{
     background-color: black; 
 }
@@ -123,3 +162,4 @@ h2{
  /*aaaaaaaaaaaaaa/*
 
 /* FIN FOOTER */
+

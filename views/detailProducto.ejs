@@ -4,7 +4,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X - UA - Compatible" contect="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../public/css/detail.css">
+            <link rel="stylesheet" href="/css/detail.css">
             <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
             <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <%- include("partials/header") %>
     <!--FIN DEL HEADER-->
             <div class= "contenedor-products">
-                <h1 class="nombre-paleta">NOMBRE: <%=producto.titulo %></h1>
+                <h1 class="nombre-paleta"><%=producto.titulo %></h1>
 
                 <li>
                     Talle: <%=producto.talles%>
@@ -34,6 +34,7 @@
                 <li>
                     Precio: <%=producto.precio%>
                 </li>
+            </div>
                 <a href="/products/<%=producto.id%>/edit">
                     <button>
                         Editar
@@ -44,7 +45,7 @@
                         Borrar
                     </button>
                 </form>
-            </div>
+          
 
         <!--COMIENZO DEL FOOTER-->
         <%- include("partials/footer") %>
