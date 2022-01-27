@@ -6,6 +6,7 @@ const methodOverride =  require('method-override')
 const mainRouter = require("./routes/mainRouter")
 const productsRouter = require("./routes/products")
 const usersRouter = require("./routes/usersRouter")
+const productsAPIRouter =require('./routes/api/products')
 
 //middleware
 //const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
@@ -33,5 +34,5 @@ app.set('views', path.join(__dirname, 'views'))
 app.use("/users", usersRouter)
 app.use("/products", productsRouter);
 app.use("/", mainRouter);
-
+app.use("/api/products", productsAPIRouter)
 
