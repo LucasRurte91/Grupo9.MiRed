@@ -17,9 +17,9 @@
     <div class="banner_img">
         <img src="images/RED.gif" alt="imagenPaddle" width="200">
     </div>
-    <H2 class="titulo">Formulario de creacion de Productos</H2>
+    <H2 class="titulo">Formulario de edicion de Productos</H2>
         <main>
-            <form action="/products/<%=producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
+            <form action="/products/edit/<%=producto.id%>?_method=PUT" method="POST" enctype="multipart/form-data" class="formul-form">
 
         <div class="formulario">
         <label for="name">Nombre Del Producto</label>
@@ -65,6 +65,16 @@
           </select>
           </div>
 
+          <div class="descripcion">
+            <label for="descripcion" class="descripcion-label">Descipción:</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              class="descripcion-input"
+              value="<%=producto.descripcion %>"
+            ></textarea>
+          </div>
+
         <div class="archivo">
             <i class="avatar">
             <label for="avatar">Selecciona una imagen</label>
@@ -74,7 +84,7 @@
 
         <div class="guardar-producto">
         <label for="guardar"></label>
-        <button type="submit" value="guardar" class="guardar">¡Guardar producto a la pagina web!</button>
+        <button type="submit" class="guardar">¡Editar producto en la pagina web!</button>
         </div>
 
     </form>

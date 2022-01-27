@@ -9,7 +9,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");*/
 
 const controller = {
     products: (req, res) => {
-            db.Producto.findAll({include: db.Categorias})
+            db.Producto.findAll()
                 .then (function(productos){
                     return res.render ("products", { productos })
                 })
@@ -40,7 +40,8 @@ const controller = {
             talles: req.body.talle,
             marcas: req.body.marca,
             categoria_id: req.body.categoria,
-            descripcion: req.body.descripcion
+            descripcion: req.body.descripcion,
+            //image: req.file.filename
         })
         .then(res.redirect("products"))
         /*let ids = products.map(p=>p.id)
@@ -63,6 +64,7 @@ const controller = {
         res.render("edit",{ productToEdit })*/
     },
     update: (req, res)=>{
+        console.log(req.body)
         db.Producto.update({
             titulo: req.body.titulo,
             precio: req.body.precio,
@@ -70,13 +72,14 @@ const controller = {
             talles: req.body.talle,
             marcas: req.body.marca,
             categoria_id: req.body.categoria,
-            descripcion: req.body.descripcion
+            descripcion: req.body.descripcion,
+            //image: req.file.filename
         },{
             where: {
                 id: req.params.id
             }
         });
-        res.redirect("products" + req.params.id);
+        res.redirect("/products/" + req.params.id);
         /*let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
 

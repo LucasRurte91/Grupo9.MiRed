@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7cc294a43bdc5e5094e2abbbacb7ee2a2f3d6309
 module.exports = (sequelize, dataTypes) => {
     let alias = "Usuarios";
     let cols = {
@@ -34,10 +30,7 @@ module.exports = (sequelize, dataTypes) => {
         image: {
             allowNull: false,
             type: dataTypes.STRING(100)
-        },
-        producto_id: {
-            type: dataTypes.INTEGER
-        },
+        }
     }
     let config = {
         tableName: "usuarios",
@@ -47,17 +40,10 @@ module.exports = (sequelize, dataTypes) => {
     const Usuario = sequelize.define(alias, cols, config);
 
     Usuario.associate = function (models) {
-<<<<<<< HEAD
-        Usuario.belongsTo(models.Producto, {
+        Usuario.hasMany(models.Producto, {
             as: 'productos',
-            foreingKey: 'producto_id'
+            foreingKey: 'usuario_id'
         })
-=======
-        /*Usuario.hasMany(models.Producto, {
-            as: 'productos',
-            foreingKey: 'producto_id'
-        })*/
->>>>>>> 7cc294a43bdc5e5094e2abbbacb7ee2a2f3d6309
 
 
     };

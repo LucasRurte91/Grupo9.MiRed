@@ -1,0 +1,46 @@
+body{
+    margin: auto;
+    padding: 0px;
+    background-color: #170420;
+    font-family: 'Lato', sans-serif;
+}
+
+/*inicio del header*/
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: #e71645
+    ;
+}
+
+.logoMenu {
+    font-size: 40px;
+    color: #e71645;
+    text-align: center;
+    visibility: hidden;
+    align-items: center;
+    
+}
+
+/*fin del header*/

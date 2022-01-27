@@ -21,10 +21,6 @@ module.exports = {
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 7cc294a43bdc5e5094e2abbbacb7ee2a2f3d6309
